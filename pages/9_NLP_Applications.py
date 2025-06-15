@@ -13,10 +13,6 @@ import plotly.express as px
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.decomposition import LatentDirichletAllocation
 import io
-import subprocess
-subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
-nlp = spacy.load("en_core_web_sm")
-
 # Now you can use the nlp object
 st.write("Model loaded successfully!")
 
