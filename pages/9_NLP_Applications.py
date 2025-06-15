@@ -13,9 +13,16 @@ import plotly.express as px
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.decomposition import LatentDirichletAllocation
 import io
-from spacy.cli import download
+try:
+    nlp = spacy.load("en_core_web_sm")
+except OSError:
+    st.write("Downloading en_core_web_sm model...")
+    import subprocess
+    subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
+    nlp = spacy.load("en_core_web_sm")
 
-download("en_core_web_sm")
+# Now you can use the nlp object
+st.write("Model loaded successfully!")
 
 # Set page config for this specific page - MUST BE THE FIRST STREAMLIT COMMAND
 st.set_page_config(
