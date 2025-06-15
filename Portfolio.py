@@ -26,7 +26,6 @@ and approach to tackling real-world data challenges.
 * **Recommender System:** Develop systems that suggest relevant items to users.
 * **Hypothesis Testing:** Conduct statistical tests to validate assumptions and draw conclusions.
 * **Data Visualizations:** Various Data visualizations and showing importance of visualizations.
-* **NLP Applications:** Explore natural language processing techniques for text data.
 * **Time Series Analysis:** Explore Time series analysis.
 
 ---
