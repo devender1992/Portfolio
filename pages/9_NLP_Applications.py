@@ -13,6 +13,9 @@ import plotly.express as px
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.decomposition import LatentDirichletAllocation
 import io
+from spacy.cli import download
+
+download("en_core_web_sm")
 
 # Set page config for this specific page - MUST BE THE FIRST STREAMLIT COMMAND
 st.set_page_config(
