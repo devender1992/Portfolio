@@ -10,4 +10,3 @@ spacy
 wordcloud
 scipy
 statsmodels
-python -m spacy download en_core_web_sm
